@@ -1,0 +1,215 @@
+/* MODULE 2 CSS */
+/*===== 1.Reset Default =====*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===== 2.Selectors =====*/
+
+/*---- 2.1 Type Selectors ----*/
+
+/*  Heading  */
+h1 {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+}
+
+/* Aside */
+aside {
+    text-align: center;
+    margin: 20px auto;
+    color:rgb(11, 11, 30);
+}
+
+/*  Heading  */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*  Form  */
+form {
+    background-color: rgb(204, 213, 220);
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/*  Paragraph  */
+p {
+    font-size: 14px;
+    color: dimgrey;
+}
+
+/*  Navigator Bar  */
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*---- 2.2 Class Selectors ----*/
+/*target the <section> element with class="from-section"*/
+.form-section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 6px;
+    width: 80%;
+}
+
+/*---- 2.3 ID Selectors ----*/
+#main-title {
+    color: rgb(0, 43, 121);
+    margin-bottom: 20px;
+}
+
+/*---- 2.4 Multiple Class Selectors ----*/
+
+.green.bold {
+    color: rgb(152, 16, 16);
+    font-weight: bold;  
+}
+
+/*---- 2.5 Attribute Slectors ----*/
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    margin: 1px 5px 1px 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(199, 224, 244);
+}
+
+input[type="password"] {
+    border: 1px solid #ccc;
+    margin: 1px 5px 1px 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+img[src*="Laurea Logo.png"] {
+    border: 1px solid #004080;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*---- 2.6 Descendant Combinators ----*/
+
+.form-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+section .main-list {
+    list-style-type: square;
+    background-color: rgb(0, 14, 46);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+.main-list li {
+    margin-left: 22px;
+    color: #ccc;
+    padding: 5px 0;
+}
+
+/*---- 2.7 Multiple Selectors ----*/
+
+h1, h2, .menu {
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*---- 2.8 Chaining ----*/
+
+h1.title {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/*---- 2.9 Pseudo-classes ----*/
+/* Hover affect for Laurea Logo*/
+.Laurea:hover {
+    opacity: 0.6;
+    transform: scale(1.4);
+    transition: all 0.3s ease;/*smoote transition*/
+}
+.Laurea:active {
+    transform: scale(10%); 
+}
+
+/* visiting the Laurea link above Laurea Logo */
+.visit-laurea:visited {
+    color: red; /*visited link color change*/
+}
+
+input:focus {
+    border-color: #004080;
+    outline: none;
+    background-color: #eef6ff;
+}
+input:disabled {
+    background-color: #eee;
+    color: #999;
+}
+
+/*===== 3. Visual Rules =====*/
+/*visual rules apply to body element.*/
+body {
+    background-color: #fafafa;
+    color: #333;
+    opacity: 0.98;
+    background-image: none !important; /*example 1*/
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/18/12/17/meadow-8071932_1280.jpg"); /*example 2*/
+    /*example 1 overrided example 2 because of important rules */
+}
+
+/*===== 4. Box Model =====*/
+
+/* Targets <textarea> element */
+textarea {
+    width: 100%;
+    min-width: 100px;
+    min-height: 120px;
+    max-height: 300px;
+    padding: 100px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+/* Target <blockquote> */
+#quote {
+    /*margin*/
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    /*padding*/
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/*visibility example for the second Laurea logo*/
+.hidden-logo{
+    visibility: hidden;
+}
