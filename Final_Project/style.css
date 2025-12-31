@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Consistent typography + spacing */
+body {
+  background: #f8f9fa;
+}
+
+.section-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.08);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-size: 1.15rem;
+}
+
+/* Carousel indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #212529;
+  border: 2px solid #fff;
+}
+
+.carousel-indicators .active {
+  background-color: rgb(73, 41, 18);
+  border-color: #212529;
+}
+
+/* Custom carousel arrow style */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(73, 41, 18);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-size: 60% 60%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5rem;
+  opacity: 1;
+}
+
+/* Skills card image responsive fix */
+@media (min-width: 768px) and (max-width: 991px) {
+  .html-card-img {
+    height: 420px !important;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Footer social icons */
+.social a {
+  text-decoration: none;
+}
+
+.social i {
+  font-size: 1.4rem;
+}
